@@ -1,0 +1,28 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaTilda.Views.SignUp"
+        Title="SignUp">
+    <Window.Styles>
+        <StyleInclude Source="../Styles/MainStyles.axaml"/>
+    </Window.Styles>
+    <Window.Background>
+        <ImageBrush Source="../Assets/TildaSidnUpBackground.png"
+                    Stretch="Fill"/>
+    </Window.Background>
+    <Panel>
+        <Border CornerRadius="5"
+                Width="200"
+                Height="300"
+                Background="Black"
+                HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock Foreground="Azure"
+                           FontWeight="Light">Начните с бесплатный учетной записи</TextBlock> 
+            </StackPanel>
+
+        </Border>
+    </Panel>
+</Window>

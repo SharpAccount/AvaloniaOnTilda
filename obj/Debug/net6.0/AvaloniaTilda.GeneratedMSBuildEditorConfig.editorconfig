@@ -18,5 +18,11 @@ build_property.ProjectDir = C:\Users\Bozhenka\RiderProjects\AvaloniaTilda\
 [C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Styles/MainStyles.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/SignUp.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
