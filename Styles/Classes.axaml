@@ -1,0 +1,9 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="Button.Submit">
+        <Setter Property="Background" Value="#ffe8c7"/>
+        <Style Selector="^:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="Azure"/>
+        </Style>
+    </Style>
+</Styles>
