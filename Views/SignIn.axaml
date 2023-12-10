@@ -1,0 +1,22 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="AvaloniaTilda.Views.SignIn"
+        Title="SignIn">
+        <Window.Background>
+                <LinearGradientBrush StartPoint="0%, 100%"
+                                     EndPoint="85%,60%">
+                        <GradientStop Offset="0" Color="#EF6B50"/>
+                        <GradientStop Offset="1" Color="#F8AD70"/>
+                </LinearGradientBrush>
+        </Window.Background>
+        <Panel>
+                <Border Background="#15FFFFFF"
+                        Height="450"
+                        Width="350">
+                        
+                </Border>
+        </Panel>
+</Window>

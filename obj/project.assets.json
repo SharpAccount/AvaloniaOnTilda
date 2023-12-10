@@ -4693,19 +4693,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bozhenka\\.nuget\\packages\\": {}
+    "C:\\Users\\vladk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaTilda\\AvaloniaTilda.csproj",
+      "projectUniqueName": "F:\\Sharaga\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
       "projectName": "AvaloniaTilda",
-      "projectPath": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaTilda\\AvaloniaTilda.csproj",
-      "packagesPath": "C:\\Users\\Bozhenka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaTilda\\obj\\",
+      "projectPath": "F:\\Sharaga\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
+      "packagesPath": "C:\\Users\\vladk\\.nuget\\packages\\",
+      "outputPath": "F:\\Sharaga\\AvaloniaOnTilda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bozhenka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vladk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4772,7 +4772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

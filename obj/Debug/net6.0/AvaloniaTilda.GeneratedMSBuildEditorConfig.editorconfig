@@ -13,19 +13,25 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AvaloniaTilda
-build_property.ProjectDir = C:\Users\Bozhenka\RiderProjects\AvaloniaTilda\
+build_property.ProjectDir = F:\Sharaga\AvaloniaOnTilda\
 
-[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/App.axaml]
+[F:/Sharaga/AvaloniaOnTilda/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Styles/Classes.axaml]
+[F:/Sharaga/AvaloniaOnTilda/Styles/Classes.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Styles/MainStyles.axaml]
+[F:/Sharaga/AvaloniaOnTilda/Styles/MainStyles.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/MainWindow.axaml]
+[F:/Sharaga/AvaloniaOnTilda/Views/EmailConfirm.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/SignUp.axaml]
+[F:/Sharaga/AvaloniaOnTilda/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[F:/Sharaga/AvaloniaOnTilda/Views/SignIn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[F:/Sharaga/AvaloniaOnTilda/Views/SignUp.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
