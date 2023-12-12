@@ -1,12 +1,30 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
     <Style Selector="Button.Submit">
         <Setter Property="Background" Value="#ffe8c7"/>
+        <Setter Property="Foreground" Value="#000000"/>
         <Setter Property="CornerRadius" Value="20"/>
         <Setter Property="FontFamily" Value="Futura"/>
-        <Setter Property="FontSize" Value="14.5"/>
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="Cursor" Value="Hand" />
         <Style Selector="^:pointerover /template/ ContentPresenter">
-            <Setter Property="Background" Value="Azure"/>
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="Foreground" Value="#000000"/>
         </Style>
+    </Style>
+    
+    <Style Selector="Button.Link">
+    <Setter Property="Foreground" Value="#90FFFFFF" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="FontFamily" Value="Futura"/>
+    <Setter Property="FontSize" Value="14.5"/>
+    <Style Selector="^:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="#90FFFFFF" />
+    </Style>
     </Style>
 </Styles>

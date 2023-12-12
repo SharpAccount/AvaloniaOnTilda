@@ -1,0 +1,37 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AvaloniaTilda
+build_property.ProjectDir = C:\Users\Bozhenka\RiderProjects\AvaloniaOnTilda\
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/Styles/Classes.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/Styles/MainStyles.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/Views/EmailConfirm.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/Views/SignIn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Bozhenka/RiderProjects/AvaloniaOnTilda/Views/SignUp.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

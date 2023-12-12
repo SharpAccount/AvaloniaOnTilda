@@ -5,6 +5,12 @@
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaTilda.Views.SignIn"
         Title="SignIn">
+        
+        <Window.Styles>
+                <StyleInclude Source="../Styles/Classes.axaml"/>
+                <StyleInclude Source="../Styles/MainStyles.axaml"/>
+        </Window.Styles>
+        
         <Window.Background>
                 <LinearGradientBrush StartPoint="0%, 100%"
                                      EndPoint="85%,60%">
@@ -14,9 +20,35 @@
         </Window.Background>
         <Panel>
                 <Border Background="#15FFFFFF"
-                        Height="450"
-                        Width="350">
-                        
+                        Padding="10, 30, 10, 37"
+                        CornerRadius="10"
+                        Height="400"
+                        Width="320">
+                        <StackPanel>
+                                <Image Source="../Assets/logo_w.png"
+                                       Margin="0, 0, 0, 35"
+                                       Height="55"
+                                       Width="55"/>
+                                <StackPanel Spacing="15">
+                                        <TextBox Watermark="Эл. почта"></TextBox>
+                                        <TextBox Watermark="Пароль"></TextBox>
+                                </StackPanel>
+                                <Button Classes="Submit"
+                                        HorizontalAlignment="Center"
+                                        Padding="55, 10"
+                                        Margin="0,50,0,0">Войти</Button>
+                                <StackPanel Margin="0,40,0,0"
+                                            HorizontalAlignment="Center"
+                                           Orientation="Horizontal"
+                                           Spacing="10">
+                                        <Button Classes="Link">
+                                                Зарегестрироваться
+                                        </Button>
+                                        <Button Classes="Link">
+                                                Забыли пароль?
+                                        </Button>
+                                </StackPanel>
+                        </StackPanel>
                 </Border>
         </Panel>
 </Window>

@@ -16,46 +16,54 @@
     </Window.Background>
     <Panel>
         <Border CornerRadius="8"
-                Width="450"
-                Height="640"
+                Width="400"
+                Height="620"
                 Background="Black"
                 HorizontalAlignment="Center"
-                Padding="35, 35, 35, 0">
+                Padding="45, 35, 45, 0">
             <StackPanel Spacing="20">
                 <Image Source="../Assets/logo_w.png"
                        Width="55"
                        Height="55"></Image>
-                <TextBlock Foreground="Azure"
+                <TextBlock Foreground="#FFFFFF"
                            FontWeight="Regular"
                            TextAlignment="Center"
                            TextWrapping="Wrap"
                            FontSize="16.5"
-                           Padding="100, 0">
+                           Padding="50, 0">
                     Начните с бесплатный учетной записи
                 </TextBlock>
-                <StackPanel Spacing="15">
+                <StackPanel Spacing="20">
                     <TextBox Watermark="Ваше имя"></TextBox>
                     <TextBox Watermark="Электронная почта"></TextBox>
                     <TextBox Watermark="Пароль"></TextBox>
+                    <Button Margin="10, 25"
+                            Classes="Submit"
+                            HorizontalAlignment="Center"
+                            Padding="65, 10">
+                        Зарегестрироваться
+                    </Button>
                 </StackPanel>
-                <Button Margin="10, 25"
-                        Classes="Submit"
-                        HorizontalAlignment="Center"
-                        Padding="65, 10">
-                    Зарегестрироваться
-                </Button>
                 <TextBlock
-                    Foreground="Gainsboro"
+                    Foreground="#90FFFFFF"
                     TextAlignment="Center"
                     TextWrapping="Wrap"
-                    FontSize="12.5">
-                    Нажимая кнопку «Зарегистрироваться»,
-                    Вы принимаете условия Пользовательского соглашения.
+                    FontSize="12.5"
+                    Margin="0, 20, 0, 0"
+                    Text="Нажимая кнопку «Зарегистрироваться», Вы
+                     принимаете условия ">
+                    <TextBlock TextDecorations="Underline"
+                               Text="Пользовательского соглашения.">
+                    </TextBlock>
                 </TextBlock>
-                <TextBlock 
-                    TextAlignment="Center"
-                    Foreground="Azure"
-                    FontSize="14.5">Уже зарегестрированы? Войти тут</TextBlock>
+                <Button 
+                    Classes="Link"
+                    Foreground="#90FFFFFF"
+                    FontSize="14.5"
+                    HorizontalAlignment="Center"
+                    Margin="0, 25, 0, 0"
+                    Content="Уже зарегестрированы? Войти тут">
+                </Button>
             </StackPanel>
         </Border>
     </Panel>
