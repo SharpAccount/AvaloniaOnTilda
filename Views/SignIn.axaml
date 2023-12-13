@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaTilda.Views.SignIn"
-        Title="SignIn">
+        WindowState="Maximized">
         
         <Window.Styles>
                 <StyleInclude Source="../Styles/Classes.axaml"/>
@@ -30,22 +30,29 @@
                                        Height="55"
                                        Width="55"/>
                                 <StackPanel Spacing="15">
-                                        <TextBox Watermark="Эл. почта"></TextBox>
-                                        <TextBox Watermark="Пароль"></TextBox>
+                                        <TextBox Watermark="Эл. почта">
+                                        </TextBox>
+                                        <TextBox Watermark="Пароль"
+                                                 PasswordChar="•">
+                                        </TextBox>
                                 </StackPanel>
-                                <Button Classes="Submit"
+                                <Button Click="OpenMainWindow"
+                                        Classes="Submit"
                                         HorizontalAlignment="Center"
                                         Padding="55, 10"
-                                        Margin="0,50,0,0">Войти</Button>
+                                        Margin="0,50,0,0"
+                                        Content="Войти">
+                                </Button>
                                 <StackPanel Margin="0,40,0,0"
                                             HorizontalAlignment="Center"
-                                           Orientation="Horizontal"
-                                           Spacing="10">
-                                        <Button Classes="Link">
-                                                Зарегестрироваться
+                                            Orientation="Horizontal"
+                                            Spacing="10">
+                                        <Button Click="OpenSignUp"
+                                                Classes="Link"
+                                                Content="Зарегестрироваться">
                                         </Button>
-                                        <Button Classes="Link">
-                                                Забыли пароль?
+                                        <Button Classes="Link"
+                                                Content="Забыли пароль?">
                                         </Button>
                                 </StackPanel>
                         </StackPanel>

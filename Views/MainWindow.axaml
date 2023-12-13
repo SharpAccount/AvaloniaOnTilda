@@ -7,9 +7,13 @@
         x:Class="AvaloniaTilda.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
+        WindowState="Maximized"
         Title="AvaloniaTilda">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
+    <Panel>
+        <TextBlock Text="Welcome"></TextBlock>
+    </Panel>
 </Window>

@@ -4,8 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaTilda.Views.SignUp"
-        WindowState="Maximized"
-        Title="SignUp">
+        WindowState="Maximized">
     <Window.Styles>
         <StyleInclude Source="../Styles/MainStyles.axaml"/>
         <StyleInclude Source="../Styles/Classes.axaml"/>
@@ -36,33 +35,34 @@
                 <StackPanel Spacing="20">
                     <TextBox Watermark="Ваше имя"></TextBox>
                     <TextBox Watermark="Электронная почта"></TextBox>
-                    <TextBox Watermark="Пароль"></TextBox>
+                    <TextBox Watermark="Пароль"
+                             PasswordChar="•">
+                    </TextBox>
                     <Button Margin="10, 25"
                             Classes="Submit"
                             HorizontalAlignment="Center"
-                            Padding="65, 10">
-                        Зарегестрироваться
+                            Padding="65, 10"
+                            Content="Зарегестрироваться">
                     </Button>
                 </StackPanel>
-                <TextBlock
-                    Foreground="#90FFFFFF"
-                    TextAlignment="Center"
-                    TextWrapping="Wrap"
-                    FontSize="12.5"
-                    Margin="0, 20, 0, 0"
-                    Text="Нажимая кнопку «Зарегистрироваться», Вы
+                <TextBlock Foreground="#90FFFFFF"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"
+                           FontSize="12.5"
+                           Margin="0, 20, 0, 0"
+                           Text="Нажимая кнопку «Зарегистрироваться», Вы
                      принимаете условия ">
                     <TextBlock TextDecorations="Underline"
                                Text="Пользовательского соглашения.">
                     </TextBlock>
                 </TextBlock>
-                <Button 
-                    Classes="Link"
-                    Foreground="#90FFFFFF"
-                    FontSize="14.5"
-                    HorizontalAlignment="Center"
-                    Margin="0, 25, 0, 0"
-                    Content="Уже зарегестрированы? Войти тут">
+                <Button Click="OpenSignIn"
+                        Classes="Link"
+                        Foreground="#90FFFFFF"
+                        FontSize="14.5"
+                        HorizontalAlignment="Center"
+                        Margin="0, 25, 0, 0"
+                        Content="Уже зарегестрированы? Войти тут">
                 </Button>
             </StackPanel>
         </Border>
