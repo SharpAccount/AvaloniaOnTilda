@@ -2,9 +2,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:AvaloniaTilda.ViewModels"
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaTilda.Views.SignIn"
+        x:DataType="vm:SignInViewModel"
+        x:CompileBindings="True"
         WindowState="Maximized">
+        
+        <Design.DataContext>
+                <vm:SignInViewModel/>
+        </Design.DataContext>
         
         <Window.Styles>
                 <StyleInclude Source="../Styles/Classes.axaml"/>
@@ -52,7 +59,8 @@
                                                 Content="Зарегестрироваться">
                                         </Button>
                                         <Button Classes="Link"
-                                                Content="Забыли пароль?">
+                                                Content="Забыли пароль?"
+                                                Command="{Binding }">
                                         </Button>
                                 </StackPanel>
                         </StackPanel>

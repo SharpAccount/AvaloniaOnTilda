@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mlZt2VQUrbgWEdXtscIgt/xy86mtiAE1zSyV3S/U1rmTDZc0P9V6F6/A4jAMppz7w2CQVdjkUVqocE+rfuLTTA==",
+  "dgSpecHash": "rNnew/57Mk3JKHlipJo32f8UPeuH5aC2rpvYDgsF8ZLQte+8Nk6cSUKa3zKC+7wzUPmmhjybGlh2uOgbOkh7Qg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
   "expectedPackageFiles": [
@@ -78,7 +78,11 @@
     "C:\\Users\\Bozhenka\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Bozhenka\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Bozhenka\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Bozhenka\\.nuget\\packages\\tmds.dbus.protocol\\0.15.0\\tmds.dbus.protocol.0.15.0.nupkg.sha512"
+    "C:\\Users\\Bozhenka\\.nuget\\packages\\tmds.dbus.protocol\\0.15.0\\tmds.dbus.protocol.0.15.0.nupkg.sha512",
+    "C:\\Users\\Bozhenka\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Bozhenka\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Bozhenka\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Bozhenka\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }
