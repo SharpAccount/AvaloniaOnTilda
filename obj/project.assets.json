@@ -4693,19 +4693,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bozhenka\\.nuget\\packages\\": {}
+    "C:\\Users\\vladk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
+      "projectUniqueName": "F:\\Sharaga\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
       "projectName": "AvaloniaTilda",
-      "projectPath": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
-      "packagesPath": "C:\\Users\\Bozhenka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bozhenka\\RiderProjects\\AvaloniaOnTilda\\obj\\",
+      "projectPath": "F:\\Sharaga\\AvaloniaOnTilda\\AvaloniaTilda.csproj",
+      "packagesPath": "C:\\Users\\vladk\\.nuget\\packages\\",
+      "outputPath": "F:\\Sharaga\\AvaloniaOnTilda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bozhenka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vladk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4767,30 +4767,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

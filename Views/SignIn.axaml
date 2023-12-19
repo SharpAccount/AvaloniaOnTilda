@@ -37,13 +37,15 @@
                                        Height="55"
                                        Width="55"/>
                                 <StackPanel Spacing="15">
-                                        <TextBox Watermark="Эл. почта">
+                                        <TextBox Watermark="Эл. почта"
+                                                 Name="EmailInput">
                                         </TextBox>
                                         <TextBox Watermark="Пароль"
-                                                 PasswordChar="•">
+                                                 PasswordChar="•"
+                                                 Name="PasswordInput">
                                         </TextBox>
                                 </StackPanel>
-                                <Button Click="OpenMainWindow"
+                                <Button Click="Login"
                                         Classes="Submit"
                                         HorizontalAlignment="Center"
                                         Padding="55, 10"
@@ -59,8 +61,7 @@
                                                 Content="Зарегестрироваться">
                                         </Button>
                                         <Button Classes="Link"
-                                                Content="Забыли пароль?"
-                                                Command="{Binding }">
+                                                Content="Забыли пароль?">
                                         </Button>
                                 </StackPanel>
                         </StackPanel>
