@@ -3,6 +3,7 @@
         
         <Style Selector="TextBlock">
                 <Setter Property="FontFamily" Value="Futura"/>
+                <Setter Property="FontWeight" Value="Light"/>
         </Style>
         <Style Selector="TextBox">
                 <Setter Property="FontFamily" Value="Futura"/>
@@ -10,6 +11,7 @@
                 <Setter Property="Background" Value="Transparent"/>
                 <Setter Property="BorderBrush" Value="Transparent"/>
                 <Setter Property="Foreground" Value="#90FFFFFF"/>
+                <Setter Property="FontWeight" Value="Normal"/>
                 <Style Selector="^:pointerover /template/ContentPresenter">
                         <Setter Property="Background" Value="Transparent"/>
                 </Style>

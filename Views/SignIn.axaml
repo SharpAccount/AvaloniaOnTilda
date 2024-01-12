@@ -60,7 +60,8 @@
                                                 Classes="Link"
                                                 Content="Зарегестрироваться">
                                         </Button>
-                                        <Button Classes="Link"
+                                        <Button Click = "OpenEmailConfirm"
+                                                Classes="Link"
                                                 Content="Забыли пароль?">
                                         </Button>
                                 </StackPanel>

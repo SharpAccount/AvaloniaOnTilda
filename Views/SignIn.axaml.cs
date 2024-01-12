@@ -38,14 +38,28 @@ public partial class SignIn : Window
         Close();
     }
     
+    private bool IsEmailValid()
+    {
+        if (EmailInput.Text is not null)
+        {
+            if (EmailInput.Text.Length > 5 && EmailInput.Text.Length < 61 && EmailInput.Text.Contains("@")) return true;
+        }
+        return false;
+    }
+    
     private void Login(object sender, RoutedEventArgs args)
     {
         if (EmailInput.Text is not null)
         {
-            if (EmailInput.Text.Length < 5 && EmailInput.Text.Length > 61 && EmailInput.Text.Contains("@")) return;
-            
-            //login here...
-            OpenMainWindow(sender, args);
+            bool isEmailValid = IsEmailValid();
+            if (isEmailValid == false)
+            {
+                return;
+            }
+            else
+            {
+                OpenMainWindow(sender, args);
+            }
         }
     }
 }
