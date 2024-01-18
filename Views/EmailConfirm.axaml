@@ -19,10 +19,10 @@
                         <GradientStop Offset="1" Color="#F8AD70"/>
                 </LinearGradientBrush>
         </Window.Background>
-        <Panel>
+        <StackPanel VerticalAlignment="Center">
               <Border Background="#FFFFFF"
                       Width="400"
-                      Height="530"
+                      Height="430"
                       Padding="30, 25, 30, 15">
                       <StackPanel HorizontalAlignment="Center">
                               <Image Source="../Assets/logo.png"
@@ -48,23 +48,31 @@
                               <TextBox Watermark="Электронная почта"
                                        Foreground="#8b8b8b"
                                        FontSize="25"
-                                       Margin="12,0,0,125">
+                                       Margin="12,0,0,35">
                               </TextBox>
-                              <Button Content="Восстанвить"
-                                      Classes="Submit"
-                                      Background="#f4846b"
-                                      Foreground="#FFFFFF"
-                                      CornerRadius="25">
+                              <StackPanel Spacing="30"
+                                          HorizontalAlignment="Center">
+                                      <Button Content="Восстанвить"
+                                              Classes="RecoverySubmit"
+                                              Background="#f4846b"
+                                              Foreground="#FFFFFF"
+                                              CornerRadius="25"
+                                              HorizontalAlignment="Center">
                                       </Button>
-                              <DockPanel>
-                                      <Button Classes="Link"
-                                              Content="Войти"
-                                              Foreground="#f4846b"></Button>
-                                      <Button Classes="Link"
-                                              Content="Зарегестрироваться"
-                                              Foreground="#f4846b"></Button>
-                              </DockPanel>
+                                      <StackPanel
+                                              Orientation="Horizontal"
+                                              Spacing="10">
+                                              <Button Classes="RecoveryLink"
+                                                      Content="Войти"
+                                                      Click="OpenSignIn">
+                                              </Button>
+                                              <Button Classes="RecoveryLink"
+                                                      Content="Зарегестрироваться"
+                                                      Click="OpenSignUp">
+                                              </Button>
+                                      </StackPanel>
+                              </StackPanel>
                       </StackPanel>
               </Border>
-        </Panel>
+        </StackPanel>
 </Window>

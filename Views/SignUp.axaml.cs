@@ -1,8 +1,11 @@
-﻿using System.Security.AccessControl;
+﻿using System.Collections.Generic;
+using System.Drawing;
+using System.Security.AccessControl;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Brushes = Avalonia.Media.Brushes;
 
 namespace AvaloniaTilda.Views;
 
@@ -13,6 +16,14 @@ public partial class SignUp : Window
         InitializeComponent();
     }
 
+    private static string currentLogin;
+    private static string currentPassword;
+    
+    public static Dictionary<string, string> getUserInfo()
+    {
+        return new Dictionary<string, string>() {{"login", currentLogin}, { "password", currentPassword } };
+    }
+    
     private bool IsLoginValid()
     {
         if (LoginInput.Text is not null)
@@ -48,26 +59,30 @@ public partial class SignUp : Window
 
     private void SubmitData(object sender, RoutedEventArgs args)
     {
+        LogInputBorder.BorderBrush = Brushes.Transparent;
+        PasswordInputBorder.BorderBrush = Brushes.Transparent;
+        EmailInputBorder.BorderBrush = Brushes.Transparent;
         bool isEmailValid = IsEmailValid();
         bool isPasswordValid = IsPasswordValid();
         bool isLoginValid = IsLoginValid();
-        if (isEmailValid == false)
-        {
-            // place for email input borderbrush color changing and etc...
-            return;
-        }
-        if (isPasswordValid == false)
-        {
-            // place for password input borderbrush color changing and etc...
-            return;
-        }
         if (isLoginValid == false)
         {
-            // place for login input borderbrush color changing and etc...
+            LogInputBorder.BorderBrush = Brushes.Red;
             return;
         }
-
+        else if (isEmailValid == false)
+        {
+            EmailInputBorder.BorderBrush = Brushes.Red;
+            return;
+        }
+        else if (isPasswordValid == false)
+        {
+            PasswordInputBorder.BorderBrush = Brushes.Red;
+            return;
+        }
         //add user data to DB here...
+        currentLogin = LoginInput.Text;
+        currentPassword = PasswordInput.Text;
         OpenSignIn(sender, args);
     }
 }
