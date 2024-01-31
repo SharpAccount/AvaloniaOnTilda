@@ -1,4 +1,6 @@
-﻿using Avalonia;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
@@ -11,6 +13,11 @@ public partial class SignIn : Window
     public SignIn()
     {
         InitializeComponent();
+    }
+
+    public string getUserInfo()
+    {
+        return EmailInput.Text;
     }
 
     private void OpenMainWindow(object sender, RoutedEventArgs args)
@@ -42,7 +49,7 @@ public partial class SignIn : Window
     {
         if (EmailInput.Text is not null)
         {
-            if (EmailInput.Text.Length > 5 && EmailInput.Text.Length < 61 && EmailInput.Text.Contains("@")) return true;
+            if (EmailInput.Text.Length > 5 && EmailInput.Text.Length < 61 && EmailInput.Text.Contains("@") && (SignUp.getPassFromLog(EmailInput.Text) != "")) return true;
         }
         return false;
     }

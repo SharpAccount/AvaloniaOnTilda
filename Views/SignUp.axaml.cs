@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Security.AccessControl;
 using Avalonia;
 using Avalonia.Controls;
@@ -16,12 +17,13 @@ public partial class SignUp : Window
         InitializeComponent();
     }
 
-    private static string currentLogin;
-    private static string currentPassword;
+    private static string[] logins = new string[] {};
+    private static string[] passwords = new string[] {};
+    private static Dictionary<string, string> logToPass = new Dictionary<string, string> {};
     
-    public static Dictionary<string, string> getUserInfo()
+    public static string getPassFromLog(string log)
     {
-        return new Dictionary<string, string>() {{"login", currentLogin}, { "password", currentPassword } };
+        return logToPass[log];
     }
     
     private bool IsLoginValid()
@@ -56,6 +58,12 @@ public partial class SignUp : Window
         new SignIn().Show();
         Close();
     }
+    
+    private void OpenMainWindow(object sender, RoutedEventArgs args)
+    {
+        new MainWindow().Show();
+        Close();
+    }
 
     private void SubmitData(object sender, RoutedEventArgs args)
     {
@@ -80,9 +88,9 @@ public partial class SignUp : Window
             PasswordInputBorder.BorderBrush = Brushes.Red;
             return;
         }
-        //add user data to DB here...
-        currentLogin = LoginInput.Text;
-        currentPassword = PasswordInput.Text;
-        OpenSignIn(sender, args);
+        // add user data to DB here...
+        logins = logins.Append(LoginInput.Text).ToArray();
+        passwords = passwords.Append(PasswordInput.Text).ToArray();
+        OpenMainWindow(sender, args);
     }
 }

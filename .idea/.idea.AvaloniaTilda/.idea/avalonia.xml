@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Styles/Classes.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Styles/MainStyles.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Views/EmailConfirm.axaml" value="AvaloniaTilda.csproj" />

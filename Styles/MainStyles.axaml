@@ -16,4 +16,13 @@
                         <Setter Property="Background" Value="Transparent"/>
                 </Style>
         </Style>
+        <Style Selector="TabItem">
+                <Setter Property="Foreground" Value="#000000"/>
+                <Style Selector="^:pointerover /template/ ContentPresenter">
+                        <Setter Property="Foreground" Value="#75000000"/>
+                </Style>
+                <Style Selector="^:selected">
+                        <Setter Property="Foreground" Value="#75000000"/>
+                </Style>
+        </Style>
 </Styles>

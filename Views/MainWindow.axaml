@@ -9,11 +9,41 @@
         Icon="/Assets/logo_w.ico"
         WindowState="Maximized"
         Title="AvaloniaTilda">
+    
+    <Window.Styles>
+        <StyleInclude Source="../Styles/MainStyles.axaml"/>
+        <StyleInclude Source="../Styles/Classes.axaml"/>
+    </Window.Styles>
+    
+    <Window.Background>
+        <SolidColorBrush Color="#ffffff"/>
+    </Window.Background>
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-    <Panel>
-        <TextBlock Name="Greetings"></TextBlock>
-    </Panel>
+    
+    <TabControl>
+        <TabItem Header="Главная"></TabItem>
+        <TabItem Header="Ввод/Вывод">
+            <StackPanel Width="400"
+                        Margin="0,70,0,0">
+                <TextBox Watermark="Логин"
+                         Classes="Input"/>
+                <TextBox Watermark="Электронная почта"
+                         Classes="Input"/>
+                <TextBox Watermark="Пароль"
+                         Classes="Input"/>
+                <Button Width="200"
+                        Height="50"
+                        Background="#8943AA"
+                        CornerRadius="10"
+                        Content="Отправить"
+                        HorizontalAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Foreground="#cccccc"/>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
 </Window>

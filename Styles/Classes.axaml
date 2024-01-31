@@ -51,4 +51,9 @@
             <Setter Property="Foreground" Value="#FFFFFF"/>
         </Style>
     </Style>
+    
+    <Style Selector="TextBox.Input">
+        <Setter Property="BorderBrush" Value="#000000"/>
+        <Setter Property="Margin" Value="0,0,0,5"/>
+    </Style>
 </Styles>
