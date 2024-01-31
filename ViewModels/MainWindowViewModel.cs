@@ -6,5 +6,5 @@ namespace AvaloniaTilda.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {
-    
+    //set data from registration here
 }

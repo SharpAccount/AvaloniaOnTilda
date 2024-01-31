@@ -3,7 +3,7 @@
         xmlns:vm="using:AvaloniaTilda.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaTilda.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/logo_w.ico"
@@ -26,23 +26,38 @@
     <TabControl>
         <TabItem Header="Главная"></TabItem>
         <TabItem Header="Ввод/Вывод">
-            <StackPanel Width="400"
-                        Margin="0,70,0,0">
-                <TextBox Watermark="Логин"
-                         Classes="Input"/>
-                <TextBox Watermark="Электронная почта"
-                         Classes="Input"/>
-                <TextBox Watermark="Пароль"
-                         Classes="Input"/>
-                <Button Width="200"
-                        Height="50"
-                        Background="#8943AA"
-                        CornerRadius="10"
-                        Content="Отправить"
-                        HorizontalAlignment="Center"
-                        HorizontalContentAlignment="Center"
-                        VerticalContentAlignment="Center"
-                        Foreground="#cccccc"/>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Width="400"
+                            Margin="0,50,0,0"
+                            VerticalAlignment="Top">
+                    <TextBox Watermark="Логин"
+                             Classes="Input"/>
+                    <TextBox Watermark="Электронная почта"
+                             Classes="Input"/>
+                    <TextBox Watermark="Пароль"
+                             Classes="Input"
+                             Margin="0,0,0,15"/>
+                    <Button Width="200"
+                            Height="50"
+                            Background="#8943AA"
+                            CornerRadius="10"
+                            Content="Отправить"
+                            HorizontalAlignment="Center"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Foreground="#cccccc"/>
+                </StackPanel>
+                <ListBox Width="1200"
+                         Height="450"
+                         Margin="0,50,0,0"
+                         BorderBrush="#8943AA"
+                         CornerRadius="10"
+                         Background="Transparent"
+                         BorderThickness="3">
+                    <ListBox.ItemTemplate>
+                        
+                    </ListBox.ItemTemplate>
+                </ListBox>
             </StackPanel>
         </TabItem>
     </TabControl>
