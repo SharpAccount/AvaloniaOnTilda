@@ -16,15 +16,6 @@ public partial class SignUp : Window
     {
         InitializeComponent();
     }
-
-    private static string[] logins = new string[] {};
-    private static string[] passwords = new string[] {};
-    private static Dictionary<string, string> logToPass = new Dictionary<string, string> {};
-    
-    public static string getPassFromLog(string log)
-    {
-        return logToPass[log];
-    }
     
     private bool IsLoginValid()
     {
@@ -88,9 +79,7 @@ public partial class SignUp : Window
             PasswordInputBorder.BorderBrush = Brushes.Red;
             return;
         }
-        // add user data to DB here...
-        logins = logins.Append(LoginInput.Text).ToArray();
-        passwords = passwords.Append(PasswordInput.Text).ToArray();
+        
         OpenMainWindow(sender, args);
     }
 }

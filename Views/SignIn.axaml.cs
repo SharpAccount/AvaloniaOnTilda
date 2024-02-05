@@ -49,7 +49,7 @@ public partial class SignIn : Window
     {
         if (EmailInput.Text is not null)
         {
-            if (EmailInput.Text.Length > 5 && EmailInput.Text.Length < 61 && EmailInput.Text.Contains("@") && (SignUp.getPassFromLog(EmailInput.Text) != "")) return true;
+            if (EmailInput.Text.Length > 5 && EmailInput.Text.Length < 61 && EmailInput.Text.Contains("@")) return true;
         }
         return false;
     }

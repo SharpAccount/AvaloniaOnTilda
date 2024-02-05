@@ -31,21 +31,22 @@
                             Margin="0,50,0,0"
                             VerticalAlignment="Top">
                     <TextBox Watermark="Логин"
-                             Classes="Input"/>
+                             Classes="Input"
+                             Text="{Binding Login}"/>
                     <TextBox Watermark="Электронная почта"
-                             Classes="Input"/>
+                             Classes="Input"
+                             Text = "{Binding Email}"/>
                     <TextBox Watermark="Пароль"
                              Classes="Input"
-                             Margin="0,0,0,15"/>
+                             Margin="0,0,0,15"
+                             Text = "{Binding Password}"/>
                     <Button Width="200"
                             Height="50"
-                            Background="#8943AA"
                             CornerRadius="10"
                             Content="Отправить"
+                            Command="{Binding AddUser}"
                             HorizontalAlignment="Center"
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
-                            Foreground="#cccccc"/>
+                            Classes="SubmitOnMainPage"/>
                 </StackPanel>
                 <ListBox Width="1200"
                          Height="450"
@@ -53,9 +54,21 @@
                          BorderBrush="#8943AA"
                          CornerRadius="10"
                          Background="Transparent"
+                         ItemsSource="{Binding Users}"
                          BorderThickness="3">
                     <ListBox.ItemTemplate>
-                        
+                        <DataTemplate>
+                            <Border BorderBrush="#cccccc"
+                                    BorderThickness="1"
+                                    Padding="0,5"
+                                    CornerRadius="10">
+                                <StackPanel>
+                                    <TextBlock>Login: <TextBlock Text="{Binding Login}"/></TextBlock>
+                                    <TextBlock>Email: <TextBlock Text="{Binding Email}"/></TextBlock>
+                                    <TextBlock>Password: <TextBlock Text="{Binding Password}"/></TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>

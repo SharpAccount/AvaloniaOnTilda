@@ -34,7 +34,7 @@
                            TextWrapping="Wrap"
                            FontSize="16.5"
                            Padding="50, 0">
-                    Начните с бесплатный учетной записи
+                    Начните с бесплатной учетной записи
                 </TextBlock>
                 <StackPanel Spacing="20">
                     <Border Name="LogInputBorder"
@@ -60,7 +60,7 @@
                             Classes="Submit"
                             HorizontalAlignment="Center"
                             Padding="65, 10"
-                            Content="Зарегестрироваться"
+                            Content="Зарегистрироваться"
                             Click="SubmitData">
                     </Button>
                 </StackPanel>
@@ -81,7 +81,7 @@
                         FontSize="14.5"
                         HorizontalAlignment="Center"
                         Margin="0, 25, 0, 0"
-                        Content="Уже зарегестрированы? Войти тут">
+                        Content="Уже зарегистрированы? Войти тут">
                 </Button>
             </StackPanel>
         </Border>
