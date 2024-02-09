@@ -14,7 +14,7 @@ public class MainWindowViewModel : ViewModelBase
     private string _login;
     private string _email;
     private string _password;
-    private static ObservableCollection<User> _users = new ObservableCollection<User>();
+    private static ObservableCollection<User> _users = new ();
 
     public string Login
     {
@@ -40,9 +40,9 @@ public class MainWindowViewModel : ViewModelBase
         set => _users = value;
     }
     
-    public void AddUser()   
+    public void AddUser()
     {
-        if (IsLoginValid(_login) && IsPasswordValid(_password) && IsEmailValid(_email))
+        if (IsLoginValid(_login) && IsPasswordValid(_password) && IsEmailValid(_email) && IsElementInCollection(_login, _email))
         {
             Users.Add(new User(_login, _email, _password));
         }
@@ -73,5 +73,17 @@ public class MainWindowViewModel : ViewModelBase
             if (pass.Length > 4 && pass.Length < 51) return true;
         }
         return false;
+    }
+
+    private bool IsElementInCollection(string log, string email)
+    {
+        foreach (User user in _users)
+        {
+            if (user.Login == log || user.Email == email)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
