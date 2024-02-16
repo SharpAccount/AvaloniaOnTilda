@@ -8,6 +8,7 @@
         <entry key="Styles/MainStyles.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Views/EmailConfirm.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Views/MainWindow.axaml" value="AvaloniaTilda.csproj" />
+        <entry key="Views/ShowUsers.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Views/SignIn.axaml" value="AvaloniaTilda.csproj" />
         <entry key="Views/SignUp.axaml" value="AvaloniaTilda.csproj" />
       </map>

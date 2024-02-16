@@ -6,7 +6,6 @@
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaTilda.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        x:CompileBindings="False"
         Icon="/Assets/logo_w.ico"
         WindowState="Maximized"
         Title="AvaloniaTilda">
@@ -59,16 +58,14 @@
                          BorderThickness="3">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <!-- <Border BorderBrush="#cccccc" -->
-                            <!--         BorderThickness="1" -->
-                            <!--         Padding="0,5" -->
-                            <!--         CornerRadius="10"> -->
-                                <StackPanel>
-                                    <TextBlock>Login: <TextBlock Text="{Binding Login}"/></TextBlock>
-                                    <TextBlock>Email: <TextBlock Text="{Binding Email}"/></TextBlock>
-                                    <TextBlock>Password: <TextBlock Text="{Binding Password}"/></TextBlock>
-                                </StackPanel>
-                            <!-- </Border> -->
+                                <DockPanel LastChildFill="True">
+                                    <CheckBox DockPanel.Dock = "Right"/>
+                                    <StackPanel DockPanel.Dock="Left">
+                                        <TextBlock Text="{Binding Login}"/>
+                                        <TextBlock Text="{Binding Email}"/>
+                                        <TextBlock Text="{Binding Password}"/>
+                                    </StackPanel>
+                                </DockPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>

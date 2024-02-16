@@ -30,6 +30,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/ShowUsers.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/Bozhenka/RiderProjects/AvaloniaTilda/Views/SignIn.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

@@ -44,7 +44,11 @@ public class MainWindowViewModel : ViewModelBase
     {
         if (IsLoginValid(_login) && IsPasswordValid(_password) && IsEmailValid(_email) && IsElementInCollection(_login, _email))
         {
-            Users.Add(new User(_login, _email, _password));
+            User newUser = new User(_login, _email, _password);
+            Users.Add(newUser);
+            Console.WriteLine(newUser.Login);
+            Console.WriteLine(newUser.Email);
+            Console.WriteLine(newUser.Password);
         }
     }
     
@@ -86,4 +90,5 @@ public class MainWindowViewModel : ViewModelBase
         }
         return true;
     }
+    
 }
