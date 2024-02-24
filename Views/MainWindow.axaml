@@ -26,10 +26,11 @@
     <TabControl>
         <TabItem Header="Главная"></TabItem>
         <TabItem Header="Ввод/Вывод">
-            <StackPanel Orientation="Vertical">
-                <StackPanel Width="400"
-                            Margin="0,50,0,0"
-                            VerticalAlignment="Top">
+            <Grid ColumnDefinitions="*, 2*">
+                <StackPanel 
+                            Margin="0,50,12,0"
+                            VerticalAlignment="Top"
+                            Grid.Column="0">
                     <TextBox Watermark="Логин"
                              Classes="Input"
                              Text="{Binding Login}"/>
@@ -40,36 +41,40 @@
                              Classes="Input"
                              Margin="0,0,0,15"
                              Text = "{Binding Password}"/>
-                    <Button Width="200"
-                            Height="50"
-                            CornerRadius="10"
-                            Content="Отправить"
-                            Command="{Binding AddUser}"
-                            HorizontalAlignment="Center"
-                            Classes="SubmitOnMainPage"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Height="50"
+                                CornerRadius="10"
+                                Content="Добавить"
+                                Command="{Binding AddUser}"
+                                Classes="SubmitOnMainPage"/>
+                        <Button Height="50"
+                                CornerRadius="10"
+                                Content="Отправить"
+                                Command="{Binding AddUser }"
+                                Classes="SubmitOnMainPage"/>
+                    </StackPanel>
                 </StackPanel>
-                <ListBox Width="1200"
-                         Height="450"
-                         Margin="0,50,0,0"
+                <ListBox Margin = "12,0,0,0"
                          BorderBrush="#8943AA"
                          CornerRadius="10"
                          Background="Transparent"
                          ItemsSource="{Binding Users}"
-                         BorderThickness="3">
+                         BorderThickness="3"
+                         Grid.Column="1">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                                <DockPanel LastChildFill="True">
-                                    <CheckBox DockPanel.Dock = "Right"/>
-                                    <StackPanel DockPanel.Dock="Left">
-                                        <TextBlock Text="{Binding Login}"/>
-                                        <TextBlock Text="{Binding Email}"/>
-                                        <TextBlock Text="{Binding Password}"/>
-                                    </StackPanel>
-                                </DockPanel>
+                            <DockPanel LastChildFill="True">
+                                <CheckBox DockPanel.Dock = "Right"/>
+                                <StackPanel DockPanel.Dock="Left">
+                                    <TextBlock Text="{Binding Login}"/>
+                                    <TextBlock Text="{Binding Email}"/>
+                                    <TextBlock Text="{Binding Password}"/>
+                                </StackPanel>
+                            </DockPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-            </StackPanel>
+            </Grid>
         </TabItem>
     </TabControl>
 </Window>

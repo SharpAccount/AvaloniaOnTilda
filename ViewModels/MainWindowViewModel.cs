@@ -46,9 +46,6 @@ public class MainWindowViewModel : ViewModelBase
         {
             User newUser = new User(_login, _email, _password);
             Users.Add(newUser);
-            Console.WriteLine(newUser.Login);
-            Console.WriteLine(newUser.Email);
-            Console.WriteLine(newUser.Password);
         }
     }
     
@@ -89,6 +86,11 @@ public class MainWindowViewModel : ViewModelBase
             }
         }
         return true;
+    }
+
+    public void AddUserToSend()
+    {
+        
     }
     
 }
