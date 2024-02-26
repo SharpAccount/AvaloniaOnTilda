@@ -63,14 +63,11 @@
                          Grid.Column="1">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <DockPanel LastChildFill="True">
-                                <CheckBox DockPanel.Dock = "Right"/>
-                                <StackPanel DockPanel.Dock="Left">
-                                    <TextBlock Text="{Binding Login}"/>
-                                    <TextBlock Text="{Binding Email}"/>
-                                    <TextBlock Text="{Binding Password}"/>
-                                </StackPanel>
-                            </DockPanel>
+                            <StackPanel PointerPressed="foo" Background="Transparent" HorizontalAlignment="Stretch">
+                                <TextBlock Text="{Binding Login}" Padding="15 0 0 0"/>
+                                <TextBlock Text="{Binding Email}" Padding="15 0 0 0"/>
+                                <TextBlock Text="{Binding Password}" Padding="15 0 0 0"/>
+                            </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
