@@ -87,10 +87,5 @@ public class MainWindowViewModel : ViewModelBase
         }
         return true;
     }
-
-    public void AddUserToSend()
-    {
-        
-    }
     
 }

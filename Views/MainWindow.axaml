@@ -63,8 +63,8 @@
                          Grid.Column="1">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel PointerPressed="foo" Background="Transparent" HorizontalAlignment="Stretch">
-                                <TextBlock Text="{Binding Login}" Padding="15 0 0 0"/>
+                            <StackPanel PointerPressed="Foo" Background="Transparent" HorizontalAlignment="Stretch">
+                                <TextBlock Text="{Binding Login}" Name="login" Padding="15 0 0 0"/>
                                 <TextBlock Text="{Binding Email}" Padding="15 0 0 0"/>
                                 <TextBlock Text="{Binding Password}" Padding="15 0 0 0"/>
                             </StackPanel>
